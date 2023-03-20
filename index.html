@@ -16,12 +16,8 @@
 <style>
   /* All delay classes will take 2x longer to start */
   :root {
-    --animate-delay: 2s;
-  }
-
-  /* All delay classes will take half the time to start */
-  :root {
-    --animate-delay: 0.5s;
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
   }
 </style>
 
@@ -75,7 +71,7 @@
             <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container">
               <div class="intro-left tm-bg-dark">
                 <h2 class="mb-4">Cảm ơn anh chị đã ghé thăm</h2>
-                <p class="mb-4">
+                <p class="mb-4 ">
                   Xin chào anh chị, em là sinh viên năm cuối ngành công nghệ ô tô, trong quá trình em cảm thấy
                   mình không phù hợp với ngành, em đã quyết định tìm tồi và tìm hiểu nhiều công việc khác cuối cùng vào
                   ngày tình cờ em
@@ -134,7 +130,7 @@
                 <img src="img/node.jpg" alt="node" height="400" loading="lazy">
                 <figcaption>
                   <div>
-                    <p>Đang trong quá tìm hiểu Node Js</p>
+                    <p>Hiểu biết Node Js, Express framework</p>
                   </div>
                   <a href="#">View more</a>
                 </figcaption>
@@ -185,6 +181,15 @@
                 </figcaption>
               </figure>
               <figure class="effect-julia item">
+                <img src="img/restapi.jpg" alt="Jquerry" height="400" loading="lazy">
+                <figcaption>
+                  <div>
+                    <p>Hiểu biết .Net core, C#, Asp.net framework, Mô hình MVC</p>
+                  </div>
+                  <a href="#">View more</a>
+                </figcaption>
+              </figure>
+              <figure class="effect-julia item">
                 <img src="img/jquerry.jpg" alt="Jquerry" height="400" loading="lazy">
                 <figcaption>
                   <div>
@@ -214,7 +219,21 @@
                     aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
+
                   <div class="carousel-item active position-relative">
+                    <h5>Dự án xây dựng webapp xem phim từ 3/2023 - now</h5>
+                    <img src="./img/Screenshot (4).png" class="d-block w-100" alt="Dự án cara" loading="lazy"
+                      height="350">
+                    <div class="router-btn position-absolute" style="bottom: 0; right: 0; z-index: 999;">
+                      <button class="btn btn-info rounded-2">
+                        <a href="https://github.com/vanhuy178/mern_stack_movies_app" class="text-white">Source</a>
+                      </button>
+                      <div class="btn  btn-info rounded-2">
+                        <a href="https://admirable-daifuku-f5bcfc.netlify.app/" class="text-white">Demo</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item position-relative">
                     <h5>Dự án xây dựng giao diện web Cara từ 9/2022-10/2022</h5>
                     <img src="./img/home.png" class="d-block w-100" alt="Dự án cara" loading="lazy" height="350">
                     <div class="router-btn position-absolute" style="bottom: 0; right: 0; z-index: 999;">
@@ -258,15 +277,42 @@
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                   data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="carousel-control-prev-icon text-light bg-dark" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
                   data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="carousel-control-next-icon text-light bg-dark" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
+
+              <style>
+                .carousel {
+                  position: relative;
+                }
+
+                .carousel-control-next,
+                .carousel-control-prev {
+                  position: absolute;
+                  font-size: 10px;
+                }
+
+                .carousel-control-prev {
+                  left: -5%;
+
+                }
+
+                .carousel-control-prev-icon,
+                .carousel-control-next-icon {
+                  padding: 25px 15px;
+                  border-radius: 5px;
+                }
+
+                .carousel-control-next {
+                  right: -5%;
+                }
+              </style>
             </div>
           </div>
         </li>
